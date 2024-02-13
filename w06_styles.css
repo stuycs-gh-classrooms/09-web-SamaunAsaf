@@ -1,0 +1,34 @@
+h1  {
+Color: blue;
+}
+
+p  {
+background-color: green;
+}
+
+p,
+h1  {
+text-align: center;
+}
+
+p {
+width: 25px; 
+height: 25px;
+}
+
+h1 {
+border: solid;
+border: 1px dodger blue;
+}
+
+h1 {
+font-size: 40px;
+}
+
+p {
+font-weight: bold;
+}
+
+p
+h1 {
+font-family: “Times”;
