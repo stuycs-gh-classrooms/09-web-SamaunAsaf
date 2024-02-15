@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The Index of Cricket</title>
+  </head>
+
+  <body>
+<nav class="links">
+    <ol>
+        <li class="links"><a href="">Introduction to the sport</a></li>
+        <li class="links"><a href="">The main rules and gameplay aspects</a></li>
+        <li class="links"><a href="">Fun facts and clips</a></li>
+    </ol>
+</nav>
+
+<h1>The Beauty of Cricket</h1>
+<p>
+    This website will explore the various aspects of Cricket. Includes the rules, how to play, fun facts, and other miscellaneous topics related to cricket.
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
