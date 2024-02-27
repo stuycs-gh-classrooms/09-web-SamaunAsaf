@@ -1,2 +1,11 @@
 html {
+font-size 24px;
+background-color #00008B;
+}
+
+body {
+width 75%;
+margin: auto;
+background-color #F8F8FF;
+border-radius 20px;
 }
