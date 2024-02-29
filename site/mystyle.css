@@ -59,10 +59,9 @@ p {
   height: auto;
   margin: auto;
 }
-.nav {
+nav {
   text-align: center;
-  background-color: #3cb371
-;
+  background-color: #3cb371;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
 }
