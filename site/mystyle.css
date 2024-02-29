@@ -19,7 +19,7 @@ h1{
   margin-top: 50px
 }
 
-p {
+alltext {
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
@@ -31,16 +31,43 @@ p {
 
 background {
   display: block;
-  width: 70%;
+  width: 100%;
   height: auto;
   margin: auto;
   border: thin;
   border-color: black;
 }
 
+history {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: thin;
+  border-color: black;
+}
+
+rules {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: thin;
+  border-color: black;
+}
+
+goats {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: thin;
+  border-color: black;
+}
 nav {
   text-align: center;
-  background-color: #0000ff;
+  background-color: #3cb371
+;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
 }
@@ -53,4 +80,8 @@ currentlinks {
 links {
   color: black;
   text-decoration: none;
+}
+
+link:hover {
+  color: white;
 }
