@@ -31,7 +31,7 @@ alltext {
 }
 
 
-background {
+.background {
   display: block;
   width: 100%;
   height: auto;
@@ -39,21 +39,21 @@ background {
 
 }
 
-history {
+.history {
   display: block;
   width: 100%;
   height: auto;
   margin: auto;
 }
 
-rules {
+.rules {
   display: block;
   width: 100%;
   height: auto;
   margin: auto;
 }
 
-goats {
+.goats {
   display: block;
   width: 100%;
   height: auto;
