@@ -5,7 +5,6 @@ html {
 
 body{
   margin: 0;
-  background-color: white;
 }
 
 li {
@@ -23,11 +22,12 @@ h1{
 
 alltext {
   text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 20px;
   margin-bottom: 5%
   line-height: 40px;
+  margin-top: 3%;
 }
 
 
@@ -38,6 +38,8 @@ background {
   margin: auto;
   border: thin;
   border-color: black;
+  image-size: 200px;
+
 }
 
 history {
