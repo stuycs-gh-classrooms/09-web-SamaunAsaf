@@ -1,5 +1,6 @@
 html {
   font-family: Times;
+  background-color: ff4edf;
 }
 
 body{
@@ -7,10 +8,11 @@ body{
   background-color: white;
 }
 
-li{
+li {
   display: inline-block;
   margin-left: 1%;
   margin-right: 1%
+  font-size: 20px;
 }
 
 h1{
