@@ -32,8 +32,6 @@ alltext {
 
 
 background {
-  display: block;
-  width: 100%;
   height: auto;
   margin: auto;
   border: thin;
@@ -43,8 +41,6 @@ background {
 }
 
 history {
-  display: block;
-  width: 100%;
   height: auto;
   margin: auto;
   border: thin;
@@ -52,8 +48,6 @@ history {
 }
 
 rules {
-  display: block;
-  width: 100%;
   height: auto;
   margin: auto;
   border: thin;
@@ -61,8 +55,6 @@ rules {
 }
 
 goats {
-  display: block;
-  width: 100%;
   height: auto;
   margin: auto;
   border: thin;
