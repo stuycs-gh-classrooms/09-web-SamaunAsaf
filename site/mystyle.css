@@ -20,7 +20,7 @@ h1{
   margin-top: 50px
 }
 
-.alltext {
+p {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
@@ -59,7 +59,7 @@ h1{
   height: auto;
   margin: auto;
 }
-nav {
+.nav {
   text-align: center;
   background-color: #3cb371
 ;
