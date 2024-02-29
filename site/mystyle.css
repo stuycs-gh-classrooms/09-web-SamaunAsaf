@@ -32,33 +32,32 @@ alltext {
 
 
 background {
+  display: block;
+  width: 100%;
   height: auto;
   margin: auto;
-  border: thin;
-  border-color: black;
-  image-size: 200px;
 
 }
 
 history {
+  display: block;
+  width: 100%;
   height: auto;
   margin: auto;
-  border: thin;
-  border-color: black;
 }
 
 rules {
+  display: block;
+  width: 100%;
   height: auto;
   margin: auto;
-  border: thin;
-  border-color: black;
 }
 
 goats {
+  display: block;
+  width: 100%;
   height: auto;
   margin: auto;
-  border: thin;
-  border-color: black;
 }
 nav {
   text-align: center;
