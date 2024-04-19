@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Samaun Asaf Fractal Showcase</title>
+  <link href="fractals.css" rel="stylesheet
+  <h1 class="title">The Modified Fractals</h1>
+</head>
+
+<body>
+    <h2 class="name">Samaun Asaf, Period 9</h2>
+
+      <h1 class="subtitle">The Koch Curve
+      <p>This is the most basic form of the Koch curve: <br>
+          <code class="code">koch_curve(t, 4, 20)</code>
+      </p>
+      <img src=images/kock.png" class="kochimage">
+      <p>The modified version of my koch curve divides the size by 1.5 after every 1 recursion and in the middle recursions it divides by 0.75 until it gets to the 4th recursion and then again divdes by 1.5:</p>
+      <img src="images/modifed_koch.png" class="modifiedkochimage">
+      <p>The code:
+        <div class="koch block"><pre><code class="code">
+        def modified_koch_curve(t, depth, size):
+          if (depth == 1):
+              t.fd(size)
+          else:
+              t.color("blue")
+              modified_koch_curve(t, depth-1, size / 1.5)
+              t.lt(60)
+              t.color("orange")
+              modified_koch_curve(t, depth-1, size / 0.75)
+              t.rt(120)
+              t.color("green")
+              modified_koch_curve(t, depth-1, size / 0.75)
+              t.lt(60)
+              t.color("magenta")
+              modified_koch_curve(t, depth-1, size / 1.5)
+              t.pu
+      </p>
+
+      <h1 class="subtitle">The Sierpinski Triangle</h1>
+      <p>The most basic version of the Sierpinski Triangle: <br>
+            <code class="code">sierpinski(t, 5, 600)</code>
+
+      </p>
+      <img src="images/sierpinski.png" class="sierpinskiimage"
+      <p>The modified sierpinski triangle has the effect of changing color every time the function is recursed meaning it swtiches colors every triangle and loops it, whilst the size is being divided by 3, adding the effect of gaps in the triangle:</p>
+      <img src="images/modifiedsierpinski.png" class="modified_sierpinski_image"
+      <p>The code:
+          <div class="sierpinski block"><pre><code class="code">
+          def modified_sierpinski(t, depth, size):
+    if depth == 1:
+        triangle(t, size)
+    else:
+        t.color("gold")
+        modified_sierpinski(t, depth-1, size/3)
+        t.fd(size/3)
+        t.color("firebrick")
+        modified_sierpinski(t, depth-1, size/3)
+        t.bk(size/3)
+        t.lt(60)
+        t.fd(size/3)
+        t.color("lawngreen")
+        modified_sierpinski(t, depth-1, size/3)
+        t.rt(60)
+        modified_sierpinski(t, depth-1, size/3)
+        t.rt(120)
+        t.fd(size/3)
+        t.lt(120)
+      </p>
+
+      <h1 class="subtitle">The Fractal Tree</h1>
+      <p>The most basic fractal tree: <br>
+        <code class="code">tree(t, 5, 20, 30)</code>
+
+      </p>
+      <img src="images/tree.png" class="treeimage"
+      <p>The modifed tree changes colors after completing half the tree and then it flips upside down repeating the same pattern but in different colors:</p>
+      <p>The code:
+        <div class="block tree"><pre><code class="code">
+        def modified_tree(t, depth, size, angle):
+      if depth == 0:
+          t.color("royalblue")
+          t.fd(size)
+          t.bk(size)
+          t.color("orangered")
+          t.fd(size)
+          t.bk(size)
+          t.color("royalblue")
+          t.fd(size)
+          t.bk(size)
+          t.color("orangered")
+      else:
+          t.color("royalblue")
+          t.fd(size)
+          t.rt(angle)
+          tree(t, depth-1, size, angle)
+          t.color("orangered")
+          t.lt(2 * angle)
+          tree(t, depth-1, size, angle)
+          t.rt(angle)
+          t.bk(size)
+          t.rt(180)
+          t.color("springgreen")
+          t.fd(size)
+          t.rt(angle)
+          tree(t, depth-1, size, angle)
+          t.color("purple")
+          t.lt(2 * angle)
+          tree(t, depth-1, size, angle)
+          t.rt(angle)
+          t.bk(size)
+        </p>
+</body>
+</html>
