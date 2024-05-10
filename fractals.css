@@ -1,21 +1,21 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #3F3F3F;
+  font-family: Arial, Times;
+  background-color: #grey;
   color: white;
-  padding-left: 20px; 
+  padding-left: 22px; 
 }
 
 h1 {
-  color: #4682B4;
+  color: #pink;
   text-align: center;
 }
 
 pre {
-  background-color: #808080;
-  padding: 10px;
+  background-color: #blue;
+  padding: 15px;
   width: fit-content;
-  border-radius: 5px;
-  font-size: 14px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 code {
   font-size: 12px;
