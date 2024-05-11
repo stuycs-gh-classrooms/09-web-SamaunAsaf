@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <title>Samaun Asaf's Fractal Showcase</title>
   <link href="fractals.css" rel="stylesheet">
-  <h1 class="title">The Modified Fractals</h1>
 </head>
 
 <body>
+  <h1 class="title">The Modified Fractals</h1>
   <h2 class="name">Samaun Asaf, Period 9</h2>
 
   <h1 class="subtitle">The Koch Curve</h1>
@@ -38,14 +38,14 @@
               modified_koch_curve(t, depth-1, size / 1.5)
               t.pu()
       </code></pre>
-
+  </div>
 
   <h1 class="subtitle">The Sierpinski Triangle</h1>
   <p>The most basic version of the Sierpinski Triangle: <br>
     <code class="code">sierpinski(t, 5, 600)</code>
   </p>
   <img src="./public_html/sierpinski.png" alt="Picture of modified sierpinski" class="sierpinskiimage">
-  <p>The modified sierpinski triangle has the effect of changing color every time the function is recursed meaning it switches colors every triangle and loops it, whilst the size is being divided by 3, adding the effect of gaps in the triangle:</p>
+  <p>The modified Sierpinski triangle has the effect of changing color every time the function is recursed, meaning it switches colors every triangle and loops it, whilst the size is being divided by 3, adding the effect of gaps in the triangle:</p>
   <img src="./public_html/modified_sierpinski.png" alt="Picture of modified sierpinski" class="modified_sierpinski_image">
   <p>The code:</p>
   <div class="sierpinski block">
@@ -70,6 +70,7 @@
         t.fd(size/3)
         t.lt(120)
       </code></pre>
+  </div>
 
   <h1 class="subtitle">The Fractal Tree</h1>
   <p>The most basic fractal tree: <br>
@@ -114,6 +115,7 @@
           t.rt(angle)
           t.bk(size)
         </code></pre>
+  </div>
 </body>
 
 </html>
