@@ -5,19 +5,19 @@
   <meta charset="utf-8">
   <title>Samaun Asaf's Fractal Showcase</title>
   <link href="fractals.css" rel="stylesheet">
+  <h1 class="title">The Modified Fractals</h1>
 </head>
 
 <body>
-  <h1 class="title">The Modified Fractals</h1>
   <h2 class="name">Samaun Asaf, Period 9</h2>
 
   <h1 class="subtitle">The Koch Curve</h1>
   <p>This is the most basic form of the Koch curve: <br>
     <code class="code">koch_curve(t, 4, 20)</code>
   </p>
-  <img src="public_html/koch_curve.png" alt="Picture of koch curve" class="kochimage">
+  <img src="./public_html/koch_curve.png" alt="Picture of koch curve" class="kochimage">
   <p>The modified version of my koch curve divides the size by 1.5 after every 1 recursion and in the middle recursions it divides by 0.75 until it gets to the 4th recursion and then again divides by 1.5:</p>
-  <img src="public_html/modified_koch_curve.png" alt="Picture of modified koch curve" class="modifiedkochimage">
+  <img src="./public_html/modified_koch_curve.png" alt="Picture of modified koch curve" class="modifiedkochimage">
   <p>The code:</p>
   <div class="koch block">
     <pre><code class="code">
@@ -38,15 +38,15 @@
               modified_koch_curve(t, depth-1, size / 1.5)
               t.pu()
       </code></pre>
-  </div>
+
 
   <h1 class="subtitle">The Sierpinski Triangle</h1>
   <p>The most basic version of the Sierpinski Triangle: <br>
     <code class="code">sierpinski(t, 5, 600)</code>
   </p>
-  <img src="public_html/sierpinski.png" alt="Picture of modified sierpinski" class="sierpinskiimage">
-  <p>The modified Sierpinski triangle has the effect of changing color every time the function is recursed, meaning it switches colors every triangle and loops it, whilst the size is being divided by 3, adding the effect of gaps in the triangle:</p>
-  <img src="public_html/modified_sierpinski.png" alt="Picture of modified sierpinski" class="modified_sierpinski_image">
+  <img src="./public_html/sierpinski.png" alt="Picture of modified sierpinski" class="sierpinskiimage">
+  <p>The modified sierpinski triangle has the effect of changing color every time the function is recursed meaning it switches colors every triangle and loops it, whilst the size is being divided by 3, adding the effect of gaps in the triangle:</p>
+  <img src="./public_html/modified_sierpinski.png" alt="Picture of modified sierpinski" class="modified_sierpinski_image">
   <p>The code:</p>
   <div class="sierpinski block">
     <pre><code class="code">
@@ -70,15 +70,14 @@
         t.fd(size/3)
         t.lt(120)
       </code></pre>
-  </div>
 
   <h1 class="subtitle">The Fractal Tree</h1>
   <p>The most basic fractal tree: <br>
     <code class="code">tree(t, 5, 20, 30)</code>
   </p>
-  <img src="public_html/tree.png" alt="Picture of tree" class="treeimage">
+  <img src="./public_html/tree.png" alt="Picture of tree" class="treeimage">
   <p>The modified tree changes colors after completing half the tree and then it flips upside down repeating the same pattern but in different colors:</p>
-  <img src="public_html/modified_tree.png" alt="Picture of modified tree" class="treeimage">
+  <img src="./public_html/modified_tree.png" alt="Picture of modified tree" class="treeimage">
   <p>The code:</p>
   <div class="block tree">
     <pre><code class="code">
@@ -115,7 +114,6 @@
           t.rt(angle)
           t.bk(size)
         </code></pre>
-  </div>
 </body>
 
 </html>
