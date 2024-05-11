@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samaun Asaf's Fractal Showcase</title>
   <link href="fractals.css" rel="stylesheet">
 </head>
-
 <body>
-  <header class="title">The Modified Fractals</header>
+  <header>
+    <h1 class="title">The Modified Fractals</h1>
+    <h2 class="name">Samaun Asaf, Period 9</h2>
+  </header>
 
-  <section class="name">Samaun Asaf, Period 9</section>
-
-  <article>
-    <header class="subtitle">The Koch Curve</header>
-    <p>This is the most basic form of the Koch curve: <br>
-      <code class="code">koch_curve(t, 4, 20)</code>
-    </p>
-    <img src="./public_html/koch_curve.png" alt="Picture of Koch curve" class="kochimage">
-    <p>The modified version of my Koch curve divides the size by 1.5 after every recursion, and in the middle recursions, it divides by 0.75 until it gets to the 4th recursion, and then again divides by 1.5.</p>
-    <img src="./public_html/modified_koch_curve.png" alt="Picture of modified Koch curve" class="modifiedkochimage">
+  <section class="fractal-section">
+    <h2 class="subtitle">The Koch Curve</h2>
+    <p>This is the most basic form of the Koch curve:</p>
+    <code class="code">koch_curve(t, 4, 20)</code>
+    <img src="./public_html/koch_curve.png" alt="Picture of koch curve" class="fractal-image">
+    <p>The modified version of my Koch curve divides the size by 1.5 after every recursion:</p>
+    <img src="./public_html/modified_koch_curve.png" alt="Picture of modified koch curve" class="fractal-image">
     <p>The code:</p>
     <div class="codeblock koch">
-      <pre><code class="code">
+      <pre><code>
 def modified_koch_curve(t, depth, size):
     if depth == 1:
         t.fd(size)
@@ -41,19 +40,18 @@ def modified_koch_curve(t, depth, size):
         t.pu()
       </code></pre>
     </div>
-  </article>
+  </section>
 
-  <article>
-    <header class="subtitle">The Sierpinski Triangle</header>
-    <p>The most basic version of the Sierpinski Triangle: <br>
-      <code class="code">sierpinski(t, 5, 600)</code>
-    </p>
-    <img src="./public_html/sierpinski.png" alt="Picture of Sierpinski triangle" class="sierpinskiimage">
-    <p>The modified Sierpinski triangle has the effect of changing color every time the function is recursed, meaning it switches colors every triangle and loops it, while the size is being divided by 3, adding the effect of gaps in the triangle.</p>
-    <img src="./public_html/modified_sierpinski.png" alt="Picture of modified Sierpinski triangle" class="modified_sierpinski_image">
+  <section class="fractal-section">
+    <h2 class="subtitle">The Sierpinski Triangle</h2>
+    <p>The most basic version of the Sierpinski Triangle:</p>
+    <code class="code">sierpinski(t, 5, 600)</code>
+    <img src="./public_html/sierpinski.png" alt="Picture of modified sierpinski" class="fractal-image">
+    <p>The modified Sierpinski triangle changes color every recursion:</p>
+    <img src="./public_html/modified_sierpinski.png" alt="Picture of modified sierpinski" class="fractal-image">
     <p>The code:</p>
     <div class="codeblock sierpinski">
-      <pre><code class="code">
+      <pre><code>
 def modified_sierpinski(t, depth, size):
     if depth == 1:
         triangle(t, size)
@@ -75,19 +73,18 @@ def modified_sierpinski(t, depth, size):
         t.lt(120)
       </code></pre>
     </div>
-  </article>
+  </section>
 
-  <article>
-    <header class="subtitle">The Fractal Tree</header>
-    <p>The most basic fractal tree: <br>
-      <code class="code">tree(t, 5, 20, 30)</code>
-    </p>
-    <img src="./public_html/tree.png" alt="Picture of tree" class="treeimage">
-    <p>The modified tree changes colors after completing half the tree and then it flips upside down, repeating the same pattern but in different colors.</p>
-    <img src="./public_html/modified_tree.png" alt="Picture of modified tree" class="treeimage">
+  <section class="fractal-section">
+    <h2 class="subtitle">The Fractal Tree</h2>
+    <p>The most basic fractal tree:</p>
+    <code class="code">tree(t, 5, 20, 30)</code>
+    <img src="./public_html/tree.png" alt="Picture of tree" class="fractal-image">
+    <p>The modified tree changes colors after completing half the tree:</p>
+    <img src="./public_html/modified_tree.png" alt="Picture of modified tree" class="fractal-image">
     <p>The code:</p>
     <div class="codeblock tree">
-      <pre><code class="code">
+      <pre><code>
 def modified_tree(t, depth, size, angle):
     if depth == 0:
         t.color("royalblue")
@@ -122,7 +119,7 @@ def modified_tree(t, depth, size, angle):
         t.bk(size)
       </code></pre>
     </div>
-  </article>
-</body>
+  </section>
 
+</body>
 </html>
