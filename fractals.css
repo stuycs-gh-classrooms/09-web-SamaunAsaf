@@ -21,7 +21,7 @@ code {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -55,16 +55,8 @@ h2 {
   overflow-x: auto;
 }
 
-.tree {
-  margin: 0 auto;
-  max-width: 80%;
-}
-
-.sierpinski {
-  margin: 0 auto;
-  max-width: 80%;
-}
-
+.tree,
+.sierpinski,
 .koch {
   margin: 0 auto;
   max-width: 80%;
