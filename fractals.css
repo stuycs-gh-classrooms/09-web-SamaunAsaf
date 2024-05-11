@@ -63,7 +63,8 @@ img {
   overflow-x: auto;
 }
 
-.codeblock pre, .codeblock code {
+.codeblock pre,
+.codeblock code {
   margin: 0;
   padding: 10px;
   font-family: monospace;
