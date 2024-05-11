@@ -1,27 +1,69 @@
-body {
-  font-family: sans-serif;
-  background-color: #grey;
-  color: white;
-  padding-left: 22px; 
+html {
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-  color: #pink;
   text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
 }
 
-pre {
-  background-color: #blue;
-  padding: 15px;
-  width: fit-content;
-  border-radius: 10px;
-  font-size: 15px;
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #555;
 }
-code {
-  font-size: 12px;
-  color: white;
+
+.title {
+  font-style: italic;
+  color: #555;
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+.codeblock {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.tree {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.sierpinski {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.koch {
+  margin: 0 auto;
+  max-width: 80%;
 }
