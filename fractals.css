@@ -58,17 +58,15 @@ img {
 }
 
 .codeblock {
+  margin: 20px auto;
+  max-width: 80%;
   overflow-x: auto;
 }
 
 .codeblock pre, .codeblock code {
   margin: 0;
-  padding: 0;
-}
-
-.codeblock code {
-  display: block;
-  white-space: pre-wrap;
+  padding: 10px;
+  font-family: monospace;
 }
 
 .koch, .sierpinski, .tree {
